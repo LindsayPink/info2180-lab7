@@ -11,8 +11,7 @@ function exec () {
         if (httpRequest.readyState === 4) {
             if (httpRequest.status === 200) {
                 let response = (httpRequest.responseText);
-                alert(response);
-                //document.getElementById("result").innerHTML = response;
+                document.getElementById("result").innerHTML = response;
             } else {
                 alert("Problem with request.");
             }
