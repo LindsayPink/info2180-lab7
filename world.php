@@ -5,6 +5,8 @@ $username = getenv('C9_USER');
 $password = '';
 $dbname = 'world';
 
+$country = $_GET['name'];
+
 $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 
 $stmt = $conn->query("SELECT * FROM countries");
